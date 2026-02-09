@@ -13,10 +13,13 @@ function next(){
   100% { transform: scale(1) rotate(-15deg); opacity:1; }
 }
 
-.heart {
-  position: absolute;
-  font-size: 2rem;
-  color: #ff4d6d;
-  animation: heart 1s infinite;
-  pointer-events:none;
-}
+document.body.addEventListener('click', e => {
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+  heart.style.left = e.clientX + 'px';
+  heart.style.top = e.clientY + 'px';
+  heart.textContent = '❤️';
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),1000);
+});
+
