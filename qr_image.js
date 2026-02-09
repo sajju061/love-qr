@@ -2,7 +2,8 @@ const QRCode = require('qrcode');
 const fs = require('fs');
 
 // Ye URL Netlify deploy hone ke baad replace karna
-const url = "https://your-netlify-site.netlify.app"; 
+const url = "https://motopatlo.netlify.app";
+ 
 
 QRCode.toFile('surprise.png', url, {
   color: {
