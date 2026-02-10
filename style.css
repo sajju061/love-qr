@@ -4,15 +4,15 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  background: linear-gradient(135deg, #ff7aa2, #ff9fc7);
   font-family:sans-serif;
 }
 
 .card{
   display:none;
   background:white;
-  padding:40px;
-  border-radius:25px;
+  padding:25px 40px;
+  border-radius:16px;
   text-align:center;
   width:90%;
   max-width:420px;
