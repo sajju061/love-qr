@@ -4,51 +4,60 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffe6f0;
+  background: #000;
   font-family: cursive;
 }
 
-.card {
-  background: #fff0f5;
-  padding: 30px;
+.box {
+  width: 90%;
+  max-width: 400px;
+  height: 80vh;
+  background: url("bg.jpg") center/cover no-repeat;
   border-radius: 20px;
+  padding: 20px;
   text-align: center;
-  width: 300px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  color: white;
 }
+
+.hidden { display: none; }
 
 .pic {
   width: 120px;
   border-radius: 15px;
 }
 
-h2 {
-  color: #d63384;
-}
-
-span {
-  color: #ff1493;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
 button {
-  padding: 10px 15px;
+  margin-top: 20px;
+  padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 14px;
+  background: pink;
+  font-size: 16px;
 }
 
-.yes {
-  background: #ff4d88;
-  color: white;
+.wife {
+  margin-top: 40%;
+  font-size: 28px;
 }
 
-.no {
-  background: #ffd6e8;
+/* Hearts animation */
+.hearts::before {
+  content: "💖 💕 💗 💓 💞 💘";
+  font-size: 30px;
+  animation: float 2s infinite alternate;
 }
 
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-30px); }
+}
+
+/* Urdu text animation */
+#urduText p {
+  opacity: 0;
+  animation: fade 1s forwards;
+}
+
+@keyframes fade {
+  to { opacity: 1; }
+}
