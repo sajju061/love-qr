@@ -77,3 +77,24 @@ function yesClick(){
 function noClick(){
   alert("Dobara socho 😜❤️");
 }
+
+
+/* ===== SAFE ADDITIONS ===== */
+
+let yesTapCount = 0;
+
+function yesGrow(){
+  const btn = document.getElementById("yesBtn");
+  yesTapCount++;
+
+  let scale = 1 + yesTapCount * 0.25;
+  btn.style.transform = `scale(${scale})`;
+
+  if(yesTapCount >= 6){
+    next(); // existing function reused safely
+  }
+}
+
+function noFunny(){
+  alert("Phir se socho 😜❤️");
+}

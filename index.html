@@ -7,14 +7,15 @@
 </head>
 <body>
 
-<div class="card active" id="proposalCard">
-  <div class="heart-box">
-    <div class="heart-content">
+<!-- SAFE PROPOSAL PAGE (does not affect old cards) -->
+<div class="card active proposal-card" id="proposalCard">
+  <div class="heart-shape">
+    <div class="heart-inner">
       <h1>💍 Will you marry me? 💍</h1>
 
       <div style="margin-top:20px;">
-        <button id="yesBtn" onclick="yesClick()">YES ❤️</button>
-        <button onclick="noClick()">NO 😅</button>
+        <button id="yesBtn" onclick="yesGrow()">YES ❤️</button>
+        <button onclick="noFunny()">NO 😅</button>
       </div>
     </div>
   </div>
