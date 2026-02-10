@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TO THE LOVE OF MY LIFE</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Wife ❤️</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="card">
-  <img src="dog.jpg" class="pic">
-  <h2>MY SWEET CUTE WIFE THIS IS FOR YOU ❤️</h2>
-
-<div class="buttons">
-  <a href="page2.html" target="_blank">
-    <button class="yes">Absolutely 💖</button>
-  </a>
-
-  <a href="javascript:alert('Baz!')">
-    <button class="no">Umm… 🙈</button>
-  </a>
+<div class="paper">
+  <h2>🔐 Enter Password</h2>
+  <input type="password" id="pw" placeholder="Password likho">
+  <button onclick="check()">Next ❤️</button>
 </div>
 
+<script>
+function check(){
+  if(document.getElementById("pw").value === "love"){
+    window.open("hearts.html", "_blank");
+  } else {
+    alert("Galat password 😢");
+  }
+}
+</script>
 
-
-
-<script src="script.js"></script>
 </body>
 </html>
-
