@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: #ffe6f0; /* pink background instead of image */
   font-family: cursive;
 }
 
@@ -12,11 +12,11 @@ body {
   width: 90%;
   max-width: 400px;
   height: 80vh;
-  background: url("bg.jpg") center/cover no-repeat;
+  /* background removed */
   border-radius: 20px;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: #d63384; /* dark pink text for contrast */
 }
 
 .hidden { display: none; }
@@ -47,11 +47,6 @@ button {
   animation: float 2s infinite alternate;
 }
 
-@keyframes float {
-  from { transform: translateY(0); }
-  to { transform: translateY(-30px); }
-}
-
 /* Urdu text animation */
 #urduText p {
   opacity: 0;
@@ -60,4 +55,9 @@ button {
 
 @keyframes fade {
   to { opacity: 1; }
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-30px); }
 }
